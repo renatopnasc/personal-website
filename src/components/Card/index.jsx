@@ -1,20 +1,19 @@
 import { Container, Button } from "./styles";
 
-export function Card() {
+export function Card({ title, description, photo, link }) {
   return (
     <Container>
-      <img src="src/assets/images/projectImg.png" alt="" />
+      <img src={photo} alt="" />
       <div>
-        <h1>Real estate Template</h1>
+        <h1>{title}</h1>
 
-        <p className="projectDescription">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-          <span>Ultrices lorem non feugiat egestas amet.</span>
-        </p>
+        <p className="projectDescription">{description}</p>
 
         <p>Website</p>
 
-        <Button>view work</Button>
+        <Button href={link} target="_blank">
+          view work
+        </Button>
       </div>
     </Container>
   );

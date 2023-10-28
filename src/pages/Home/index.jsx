@@ -18,6 +18,7 @@ import { MdMail } from "react-icons/md";
 
 import meJpeg from "../../assets/images/me.jpeg";
 import resume from "../../assets/pdf/RenatoNascimentoResume.pdf";
+import aitmospheric from "../../assets/images/aitmospheric.png";
 
 export function Home() {
   const scrollToElement = (elementId) => {
@@ -62,6 +63,16 @@ export function Home() {
   const handleTechLeave = () => {
     setHoveredTech(null);
   };
+
+  const projects = [
+    {
+      name: "AITMOSPHERIC",
+      description:
+        "Frontend project carried out with the aim of an ML engineer to practically publish his audio-based AI experiment.",
+      link: "https://aitmospheric.vercel.app/",
+      photo: aitmospheric,
+    },
+  ];
 
   return (
     <div>
@@ -115,8 +126,14 @@ export function Home() {
             </h2>
 
             <div className="projects">
-              <Card />
-              <Card />
+              {projects.map((project) => (
+                <Card
+                  title={project.name}
+                  description={project.description}
+                  photo={project.photo}
+                  link={project.link}
+                />
+              ))}
             </div>
           </div>
 

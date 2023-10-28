@@ -11,6 +11,8 @@ export const Container = styled.div`
     width: 100%;
     height: 49rem;
 
+    object-fit: cover;
+
     border-radius: 1.6rem;
   }
 
@@ -50,7 +52,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   background: none;
   border: 1px solid ${({ theme }) => theme.COLORS.NEUTRAL_2};
   border-radius: 10rem;
@@ -60,6 +62,7 @@ export const Button = styled.button`
   line-height: 150%;
   font-weight: 400;
   text-transform: uppercase;
+  text-decoration: none;
 
   cursor: pointer;
 
