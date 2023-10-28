@@ -69,6 +69,13 @@ export const Container = styled.div`
           margin-bottom: 9rem;
         }
       }
+
+      @media (max-width: ${DEVICE_BREAKPONTS.XS}) {
+        & {
+          height: 60rem;
+          margin-bottom: 9rem;
+        }
+      }
     }
 
     .techsContainer {
