@@ -114,6 +114,10 @@ export const Container = styled.div`
           padding: 10px;
           border-radius: 4px;
           display: none;
+
+          p {
+            color: ${({ theme }) => theme.COLORS.NEUTRAL_1};
+          }
         }
 
         .techItem:hover .techCard {

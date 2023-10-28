@@ -10,10 +10,10 @@ export function Header({ handleScrollElement }) {
             <a onClick={() => handleScrollElement("home")}>HOME</a>
           </li>
           <li>
-            <a onClick={() => handleScrollElement("projects")}>PROJECTS</a>
+            <a onClick={() => handleScrollElement("projects")}>PROJETOS</a>
           </li>
           <li>
-            <a onClick={() => handleScrollElement("about")}>ABOUT</a>
+            <a onClick={() => handleScrollElement("about")}>SOBRE</a>
           </li>
         </ul>
       </nav>

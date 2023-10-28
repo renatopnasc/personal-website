@@ -12,7 +12,7 @@ export function Card({ title, description, photo, link }) {
         <p>Website</p>
 
         <Button href={link} target="_blank">
-          view work
+          ver projeto
         </Button>
       </div>
     </Container>

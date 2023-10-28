@@ -68,7 +68,7 @@ export function Home() {
     {
       name: "AITMOSPHERIC",
       description:
-        "Frontend project carried out with the aim of an ML engineer to practically publish his audio-based AI experiment.",
+        "Projeto frontend realizado com o objetivo de um de ML Engineer publicar de forma prática seu experimento de IA baseado em áudio.",
       link: "https://aitmospheric.vercel.app/",
       photo: aitmospheric,
     },
@@ -84,8 +84,8 @@ export function Home() {
         <main>
           <div className="description" id="home">
             <h2>
-              Hello, I’m Renato Pessoa, a Web Developer specialising in{" "}
-              <span>ReactJS</span> and <span>Express</span>
+              Olá, eu sou Renato Pessoa, desenvolvedor web se especializando em{" "}
+              <span>ReactJS</span> e <span>Express</span>
             </h2>
 
             <button>
@@ -98,7 +98,7 @@ export function Home() {
 
           <div className="techsContainer" id="techs">
             <h2>
-              Some of the <span>technologies I use</span>
+              Algumas das <span>tecnologias que eu uso</span>
             </h2>
 
             <div className="techs">
@@ -122,7 +122,7 @@ export function Home() {
 
           <div className="projectsContainer" id="projects">
             <h2>
-              Selected <span>Projects</span>
+              <span>Projetos</span> Selecionados
             </h2>
 
             <div className="projects">
@@ -139,13 +139,13 @@ export function Home() {
 
           <div className="aboutContainer" id="about">
             <div>
-              <h2>a bit about me</h2>
+              <h2>um pouco sobre mim</h2>
 
               <p>
-                I'm a <span>web developer</span> passionate about creating good
-                user experiences. In addition to developing,{" "}
-                <span>I love music</span>, <span>games</span>,{" "}
-                <span>traveling</span> and <span>soccer</span>.
+                Eu sou um <span>desenvolvedor web</span> apaixonado em criar
+                boas experiências para os usuários. Além de desenvolver
+                projetos, <span>eu amo escutar música</span>, <span>jogar</span>
+                , <span>viajar</span> e <span>assistir futebol</span>.
               </p>
             </div>
 
@@ -157,7 +157,7 @@ export function Home() {
               <h2>
                 Get <span>in Touch</span>
               </h2>
-              <p>So that we can talk more about...</p>
+              <p>Então poderemos conversar melhor...</p>
 
               <button className="cvButton" onClick={handleDownloadClick}>
                 Download CV
