@@ -100,6 +100,8 @@ export const Container = styled.div`
         .techItem {
           position: relative;
           cursor: pointer;
+
+          color: ${({ theme }) => theme.COLORS.NEUTRAL_2};
         }
 
         .techCard {
