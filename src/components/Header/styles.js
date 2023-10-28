@@ -7,12 +7,12 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  padding-block: 2.4rem;
+  padding-block: 1.5rem;
 
   grid-area: header;
 
   > h1 {
-    font-size: 3.2rem;
+    font-size: 2rem;
 
     background: ${({ theme }) => theme.COLORS.PRIMARY};
     -webkit-background-clip: text;
@@ -23,7 +23,7 @@ export const Container = styled.header`
   > nav ul {
     display: flex;
     align-items: center;
-    gap: 3.2rem;
+    gap: 2rem;
 
     list-style: none;
 
@@ -31,7 +31,7 @@ export const Container = styled.header`
       text-decoration: none;
       color: ${({ theme }) => theme.COLORS.NEUTRAL_1};
       font-weight: 600;
-      font-size: 1.4rem;
+      font-size: 0.875rem;
       line-height: 150%;
 
       transition: all 100ms ease-in;

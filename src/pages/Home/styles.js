@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPONTS } from "../../styles/devicesBreakpoint";
 
 export const Container = styled.div`
-  max-width: 112rem;
+  max-width: 70rem;
   height: 100vh;
   margin: 0 auto;
+
+  padding-inline: 3.75rem;
 
   display: grid;
   grid-template-rows: auto 1fr;
@@ -23,21 +26,21 @@ export const Container = styled.div`
 
     .description {
       width: 100%;
-      height: 70rem;
+      height: 43.75rem;
 
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
 
-      padding-top: 22rem;
-      padding-bottom: 4.2rem;
+      padding-top: 13.75rem;
+      padding-bottom: 2.625rem;
 
-      margin-bottom: 10rem;
+      margin-bottom: 6.25rem;
 
       h2 {
-        max-width: 100rem;
-        font-size: 5.6rem;
+        max-width: 62.5rem;
+        font-size: 3.5rem;
         font-weight: 300;
         color: ${({ theme }) => theme.COLORS.NEUTRAL_2};
         line-height: 150%;
@@ -59,21 +62,28 @@ export const Container = styled.div`
           opacity: 0.8;
         }
       }
+
+      @media (max-width: ${DEVICE_BREAKPONTS.SM}) {
+        & {
+          height: 70rem;
+          margin-bottom: 9rem;
+        }
+      }
     }
 
     .techsContainer {
       width: 100%;
 
-      padding-top: 10rem;
-      padding-bottom: 13rem;
+      padding-top: 6.25rem;
+      padding-bottom: 8.125rem;
 
       display: flex;
       flex-direction: column;
-      gap: 8rem;
+      gap: 5rem;
 
       h2 {
-        max-width: 52rem;
-        font-size: 4rem;
+        max-width: 32.5rem;
+        font-size: 2.5rem;
         font-weight: 300;
         line-height: 150%;
         color: ${({ theme }) => theme.COLORS.NEUTRAL_2};
@@ -148,16 +158,16 @@ export const Container = styled.div`
 
     .projectsContainer {
       width: 100%;
-      padding-top: 8rem;
-      padding-bottom: 12rem;
+      padding-top: 5rem;
+      padding-bottom: 7.5rem;
 
       display: flex;
       flex-direction: column;
-      gap: 9.7rem;
+      gap: 6.25rem;
 
       > h2 {
         font-weight: 300;
-        font-size: 4rem;
+        font-size: 2.5rem;
         line-height: 150%;
         color: ${({ theme }) => theme.COLORS.NEUTRAL_2};
 
@@ -170,13 +180,13 @@ export const Container = styled.div`
       .projects {
         display: flex;
         flex-direction: column;
-        gap: 9.7rem;
+        gap: 6.25rem;
       }
     }
 
     .aboutContainer {
       width: 100%;
-      padding-block: 7.4rem;
+      padding-block: 4.625rem;
 
       display: flex;
       align-items: center;
@@ -184,20 +194,20 @@ export const Container = styled.div`
 
       > div {
         h2 {
-          font-size: 2.4rem;
+          font-size: 1.5rem;
           font-weight: 600;
           line-height: 150%;
           color: ${({ theme }) => theme.COLORS.NEUTRAL_1};
           text-transform: uppercase;
 
-          margin-bottom: 1.6rem;
+          margin-bottom: 1rem;
         }
 
         p {
           font-weight: 300;
-          font-size: 3.2rem;
+          font-size: 2rem;
           line-height: 150%;
-          max-width: 59.6rem;
+          max-width: 37.25rem;
           color: ${({ theme }) => theme.COLORS.NEUTRAL_2};
 
           span {
@@ -208,20 +218,30 @@ export const Container = styled.div`
       }
 
       > img {
-        max-width: 28.2rem;
+        max-width: 17.625rem;
         object-fit: cover;
-        border-radius: 1.6rem;
+        border-radius: 1rem;
+      }
+
+      @media (max-width: ${DEVICE_BREAKPONTS.SM}) {
+        flex-direction: column-reverse;
+        gap: 2rem;
+
+        div {
+          text-align: center;
+          margin-top: ;
+        }
       }
     }
 
     .getInTouchContainer {
       width: 100%;
 
-      padding-top: 8rem;
-      padding-bottom: 4rem;
+      padding-top: 5rem;
+      padding-bottom: 2.5rem;
 
       > div {
-        max-width: 59.2rem;
+        max-width: 37rem;
 
         margin: 0 auto;
 
@@ -230,7 +250,7 @@ export const Container = styled.div`
         align-items: center;
 
         h2 {
-          font-size: 5.6rem;
+          font-size: 3.5rem;
           font-weight: 300;
           color: ${({ theme }) => theme.COLORS.NEUTRAL_2};
           line-height: 150%;
@@ -243,7 +263,7 @@ export const Container = styled.div`
         }
 
         p {
-          font-size: 1.8rem;
+          font-size: 1.125rem;
           font-weight: 300;
           color: ${({ theme }) => theme.COLORS.NEUTRAL_2};
         }
@@ -252,10 +272,10 @@ export const Container = styled.div`
           background: transparent;
           border: 1px solid ${({ theme }) => theme.COLORS.NEUTRAL_2};
           color: ${({ theme }) => theme.COLORS.NEUTRAL_1};
-          font-size: 2.4rem;
-          margin-top: 3.2rem;
-          padding: 0.8rem 1.6rem;
-          border-radius: 2.4rem;
+          font-size: 1.5rem;
+          margin-top: 2rem;
+          padding: 0.5rem 1rem;
+          border-radius: 1.5rem;
 
           cursor: pointer;
 
@@ -272,9 +292,9 @@ export const Container = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 5.6rem;
+          gap: 3.5rem;
 
-          margin-top: 6rem;
+          margin-top: 3.75rem;
 
           a {
             color: ${({ theme }) => theme.COLORS.NEUTRAL_2};
