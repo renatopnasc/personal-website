@@ -236,7 +236,6 @@ export const Container = styled.div`
 
         div {
           text-align: center;
-          margin-top: ;
         }
       }
     }
