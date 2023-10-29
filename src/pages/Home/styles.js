@@ -63,14 +63,14 @@ export const Container = styled.div`
         }
       }
 
-      @media (max-width: ${DEVICE_BREAKPONTS.SM}) {
+      @media (max-width: ${DEVICE_BREAKPONTS.MD}) {
         & {
           height: 70rem;
           margin-bottom: 9rem;
         }
       }
 
-      @media (max-width: ${DEVICE_BREAKPONTS.XS}) {
+      @media (max-width: ${DEVICE_BREAKPONTS.MD}) {
         & {
           height: 60rem;
           margin-bottom: 9rem;
@@ -230,7 +230,7 @@ export const Container = styled.div`
         border-radius: 1rem;
       }
 
-      @media (max-width: ${DEVICE_BREAKPONTS.SM}) {
+      @media (max-width: ${DEVICE_BREAKPONTS.MD}) {
         flex-direction: column-reverse;
         gap: 2rem;
 

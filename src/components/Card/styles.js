@@ -52,7 +52,7 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: ${DEVICE_BREAKPONTS.SM}) {
+  @media (max-width: ${DEVICE_BREAKPONTS.MD}) {
     & {
       display: block;
       position: relative;

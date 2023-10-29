@@ -1,24 +1,24 @@
+// Components Imports
 import { Header } from "../../components/Header";
 import { Card } from "../../components/Card";
 import { Container } from "./styles";
 import { ParticlesComponent } from "../../components/ParticlesComponent";
+
+// Hooks Imports
 import { useState } from "react";
 
+// Icons import
 import { BsChevronDown } from "react-icons/bs";
-import {
-  BiLogoJavascript,
-  BiLogoHtml5,
-  BiLogoCss3,
-  BiLogoReact,
-  BiLogoNodejs,
-  BiLogoLinkedinSquare,
-  BiLogoGithub,
-} from "react-icons/bi";
+import { BiLogoLinkedinSquare, BiLogoGithub } from "react-icons/bi";
 import { MdMail } from "react-icons/md";
 
+// Import assets files path
 import meJpeg from "../../assets/images/me.jpeg";
 import resume from "../../assets/pdf/RenatoNascimentoResume.pdf";
-import aitmospheric from "../../assets/images/aitmospheric.png";
+
+// Utils Imports
+import { projects } from "../../utils/projects";
+import { techs } from "../../utils/techs";
 
 export function Home() {
   const scrollToElement = (elementId) => {
@@ -48,14 +48,6 @@ export function Home() {
 
   const [hoveredTech, setHoveredTech] = useState(null);
 
-  const techData = [
-    { name: "JavaScript", icon: <BiLogoJavascript className="js" size={60} /> },
-    { name: "React", icon: <BiLogoReact className="react" size={60} /> },
-    { name: "Node.js", icon: <BiLogoNodejs className="node" size={60} /> },
-    { name: "HTML5", icon: <BiLogoHtml5 className="html" size={60} /> },
-    { name: "CSS3", icon: <BiLogoCss3 className="css" size={60} /> },
-  ];
-
   const handleTechHover = (techName) => {
     setHoveredTech(techName);
   };
@@ -63,16 +55,6 @@ export function Home() {
   const handleTechLeave = () => {
     setHoveredTech(null);
   };
-
-  const projects = [
-    {
-      name: "AITMOSPHERIC",
-      description:
-        "Projeto frontend realizado com o objetivo de um de ML Engineer publicar de forma prática seu experimento de IA baseado em áudio.",
-      link: "https://aitmospheric.vercel.app/",
-      photo: aitmospheric,
-    },
-  ];
 
   return (
     <div>
@@ -102,7 +84,7 @@ export function Home() {
             </h2>
 
             <div className="techs">
-              {techData.map((tech) => (
+              {techs.map((tech) => (
                 <div
                   key={tech.name}
                   className="techItem"
